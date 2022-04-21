@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    h1 Login
+    form(id='myforml' action='/users/login' method='post')
+        if loginerr
+            p Error, please retry
+        table
+            tr
+                td Email:
+                td
+                    input(type='text' name='email' required)
+            tr
+                td Password:
+                td
+                    input(type='password' name='password' required)
+            tr
+                td
+                td
+                    input(type='submit' value='Go')
+
+

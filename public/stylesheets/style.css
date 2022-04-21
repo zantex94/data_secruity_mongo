@@ -1,0 +1,251 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Set up document
+-----------------------------------------------------------------------------*/
+body {
+  background: #eee;
+  font-family: "Nimbus Sans", sans-serif;
+  font-size : .75em;
+  line-height: 1.5;
+  text-align: center;
+}
+header, footer, main {
+  background: #eee;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  width: 100%;
+}
+/* Typography
+-----------------------------------------------------------------------------*/
+h1 {
+  color: #666;
+  font-family: 'URW Bookman', serif;
+  font-size: 4em;
+  font-weight: 900;
+  line-height: 0.9em;
+  margin-bottom: 0.9em;
+}
+h2 {
+  font-size: 1.8em;
+  line-height: 1em;
+  margin-bottom: 1em;
+}
+h3 {
+  font-size: 1.6em;
+  line-height: 1.13em;
+  margin-bottom: 1.13em;
+}
+h4 {
+  font-size: 1.4em;
+  line-height: 1.29em;
+  margin-bottom: 1.29em;
+}
+h5 {
+  font-size: 1.3em;
+  line-height: 1.38em;
+  margin-bottom: 1.38em;
+}
+h6 {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+p,
+q,
+cite,
+address,
+ul,
+ol,
+dl {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+li,
+dd,
+dt {
+  font-size: 1em;
+}
+a {
+  text-decoration: underline;
+  color: #33c;
+  outline: none;
+}
+a:hover {
+  text-decoration: none;
+}
+code,
+samp,
+dfn,
+kbd,
+var,
+acronym,
+ins,
+del,
+abbr {
+  speak: spell-out;
+}
+acronym {
+  speak: normal;
+}
+table {
+    margin-bottom: 1em;
+}
+table td {
+    margin: 5px;
+    padding: 2px;
+}
+textarea {
+    padding: 5px;
+}
+/* CSS Tables
+-----------------------------------------------------------------------------*/
+.css-table {
+  width: 100%;
+  display: table;
+}
+.css-table .two-column {
+  display: table-row;
+}
+.css-table .two-column .cell {
+  display: table-cell;
+  vertical-align: top;
+  width: 50%;
+}
+.css-table .two-column .cell * {
+  width: 90%;
+}
+.css-table .three-column {
+  display: table-row;
+}
+.css-table .three-column .cell {
+  display: table-cell;
+  width: 33.33333%;
+}
+.css-table .three-column .cell * {
+  width: 90%;
+}
+.css-table .four-column {
+  display: table-row;
+}
+.css-table .four-column .cell {
+  display: table-cell;
+  width: 25%;
+}
+/* Header
+-----------------------------------------------------------------------------*/
+header {
+  background: #111;
+}
+header nav {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: right;
+}
+header nav ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-right: 20px;
+}
+header nav ul li {
+  display: inline;
+  margin-right: 1%;
+}
+header nav ul li a {
+  background: #ccc;
+  -webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
+  border-radius: 7px;
+  display: inline-block;
+  padding: 5px 12px 4px;
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+}
+header nav ul li a:hover {
+  background-color: #999;
+}
+/* Footer
+-----------------------------------------------------------------------------*/
+footer {
+  background-color: #111;
+  text-align: center;
+}
+footer > section {
+  color: #eee;
+  margin: 0 auto;
+}
+footer div {
+
+}
+footer ul {
+  list-style: none;
+}
+footer img { 
+    background:#fff;
+    padding:5px;
+    border: 1px solid #999; 
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    border-radius: 25px;
+} 
+footer p {
+    color: #eee;
+    margin-bottom: .1em;
+}
+footer p a {
+    color: #bbb;
+    font-size: small;
+    margin-bottom: .1em;
+}

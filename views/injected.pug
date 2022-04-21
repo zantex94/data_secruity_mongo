@@ -1,0 +1,20 @@
+extends layout
+
+block content
+    h1 Injected ;)
+    section
+        table
+            tr
+                th Fornavn
+                th Efternavn
+                th Email
+                th Password
+                th Created Date
+            each user in who
+                tr
+                    td #{user.firstName}
+                    td #{user.lastName}
+                    td #{user.email}
+                    td #{user.password}
+                    td #{user.created}
+

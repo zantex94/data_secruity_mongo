@@ -1,0 +1,32 @@
+extends layout
+
+block content
+    h1 Register
+    form(id='myformr' action='/users/register' method='post')
+        table
+            tr
+                td First Name:
+                td
+                    input(type='text' name='firstName' placeholder='firstname' required)
+            tr
+                td Surname:
+                td
+                    input(type='text' name='lastName' placeholder='surname' required)
+            tr
+                td Email:
+                td
+                    input(type='email' name='email' placeholder='n@mm.tld' required)
+            tr
+                td Password:
+                td
+                    input(type='password' name='password' placeholder='password, minimum 12 mixed characters' required)
+            tr
+                td Password repeat:
+                td
+                    input(type='password' name='password1' placeholder='repeat password' required)
+            tr
+                td
+                td
+                    input(type='submit' value='Go')
+
+

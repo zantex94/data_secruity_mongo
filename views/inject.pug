@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    h1 Get User
+    form(id='myforml' action='/users/inject' method='post')
+        table
+            tr
+                td Email:
+                td
+                    input(type='text' name='email' required)
+            tr
+                td
+                td
+                    input(type='submit' value='Get the User')
+
+

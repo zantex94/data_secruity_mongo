@@ -1,0 +1,59 @@
+doctype
+html
+  head
+    title= title
+    meta(charset='utf-8')
+    link(rel="icon", type="image/svg+xml", href="/favicon.svg")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(type="module", src='/javascripts/nquery.js')
+  body
+    header
+      nav
+        ul
+          li
+            a(href="/") Home
+          if !loggedin
+            li
+              a(href="/users/register") Register
+            li
+              a(href="/users/login") Login
+          else
+            li
+              a(href="/users/logout") Logout
+          li
+            a(href="/users/inject") Test inject
+    main
+      if loggedin
+        p Welcome #{who}
+
+      block content
+    footer
+      section.css-table
+        section.four-column
+          section.cell
+            h2 Never
+            div
+                <img src='/images/graduate-student.svg' alt='smartass'/>
+            p Why do you have four<br/>columns here when<br/>everybody else has three
+          section.cell
+            h2 (Almost)
+            div
+                <img src='/images/robber-and-the-victim.svg' alt='you and your users'/>
+            p Your courageous originality<br/>will certainly be<br/>rewarded with confused users
+          section.cell
+            h2 Four
+            div
+                <img src='/images/money-bag.svg' alt='make money here'/>
+            p Make your users believe they are<br/>about to help them make<br/>a bundle from using your site
+          section.cell
+            h2 Columns
+            div
+                <img src='/images/rugby-two-color-badge.svg' alt='whaddayaknow' style='width:106px;height:106px;'/>
+            p The perfect place to talk<br/>about your services that is<br/>if you have four of them
+    footer
+        p Icons made by
+          a(href='https://www.flaticon.com/authors/ocha' title='OCHA') OCHA
+          |from
+          a(href='https://www.flaticon.com/' title='Flaticon') www.flaticon.com
+          |is licensed by
+          a(href='http://creativecommons.org/licenses/by/3.0/' title='Creative Commons BY 3.0' target='_blank') CC 3.0 BY
