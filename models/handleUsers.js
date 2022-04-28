@@ -35,10 +35,17 @@ exports.saveUser = async function (req) {
         firstName: req.body.firstName,
         lastName: req.body.lastName,
         email: req.body.email,
-        password: await bcrypt.hash(req.body.password, saltTurns)
+        password: await bcrypt.hash(req.body.password, saltTurns),
+        created: req.body.created,
     });
     try {
         await user.save(function(err, saved) {
+            //if there is an error it dosen´t set the row into mongo.
+            if(err){
+                console.log(err);
+                db.close();
+                return err;
+            }
             db.close();
             return saved;
         });

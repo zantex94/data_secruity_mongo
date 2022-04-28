@@ -10,7 +10,7 @@ router.get('/register', function(req, res) {    // display register route
 });
 router.post('/register', async function(req, res) {   // new user post route
     let user = await userHandler.saveUser(req);
-    res.redirect('/');                   // skip the receipt, return to fp
+    res.redirect('/');                          // skip the receipt, return to fp
 });
 
 router.get('/login', function(req, res) {       // display register route
